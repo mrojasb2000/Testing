@@ -12,17 +12,17 @@ class Test(unittest.TestCase):
     def test_should_return_1_when_pass_0(self):
         expected = 1
         received = fibonacci(0)
-        self.assertAlmostEqual(received, expected)
+        self.assertEqual(received, expected)
 
     def test_should_return_1_when_pass_1(self):
         expected = 1
         received = fibonacci(1)
-        self.assertAlmostEqual(received, expected)
+        self.assertEqual(received, expected)
 
     def test_should_return_err_when_pass_not_number(self):
         expected = 'Error: input type is not number'
-        received = fibonacci(1)
-        self.assertAlmostEqual(received, expected)
+        received = fibonacci('1')
+        self.assertEqual(received, expected)
 
 
 if __name__ == "__main__":

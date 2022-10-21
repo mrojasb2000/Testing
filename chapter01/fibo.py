@@ -2,8 +2,9 @@ import numbers
 
 
 def fibonacci(n):
-    if isinstance(5, numbers.Number):
+    if isinstance(n, numbers.Number) is False:
         return 'Error: input type is not number'
+
     if n == 0:
         return 1
     elif n == 1:
